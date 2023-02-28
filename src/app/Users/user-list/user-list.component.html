@@ -1,0 +1,27 @@
+ 
+<div class="card">
+    <div class="card-header">
+         <p>Manage Teachers </p> 
+        </div>    
+    <div class="card-body">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"> iD</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Adresse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of Users" >
+                <td>{{item.id}}</td>
+                <td>{{item.nsmr}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.adrese}}</td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+  
